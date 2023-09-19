@@ -4,7 +4,6 @@
 
 Being an upcoming web developer is a new begining for me. To allow myself to share projects is essential, not just for job applications or freelance work, but also for collaborative opportunities with fellow developers. This portfolio is created using React to demonstrate proficiency in the latest web development technologies.
 
-![Mark Amaro](/school pick.jpg)
 
 ## About Me
 
