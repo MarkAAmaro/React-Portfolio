@@ -1,42 +1,40 @@
 import React from 'react';
-import Project from './Project';  
+import Project from './Project';
 
 const Portfolio = () => {
-  
   const projects = [
     {
       title: 'Tech Blog',
-      imageUrl: '/BlogTracker.png',
+      imageUrl: process.env.PUBLIC_URL + '/BlogTracker.png',
       deployedUrl: 'https://limitless-sierra-77455-2b6ced556da9.herokuapp.com/',
       repoUrl: 'https://github.com/MarkAAmaro/Tech-Blog'
     },
     {
       title: 'Coding Knowledge Quiz',
-      imageUrl: '/start quiz.png',
-      deployedUrl: 'https://markaamaro.github.io/Coding-Knowledge-Quiz/',
+      imageUrl: process.env.PUBLIC_URL + '/start quiz.png', 
       repoUrl: 'https://github.com/MarkAAmaro/Coding-Knowledge-Quiz'
     },
     {
       title: 'Dog Park And Go!',
-      imageUrl: '/DogPark.png',
+      imageUrl: process.env.PUBLIC_URL + '/DogPark.png',
       deployedUrl: 'https://markaamaro.github.io/Dog-Park-And-Go/',
       repoUrl: 'https://github.com/MarkAAmaro/Dog-Park-And-Go'
     },
     {
       title: 'Weather Dashboard',
-      imageUrl: '/Dashboard.png',
+      imageUrl: process.env.PUBLIC_URL + '/Dashboard.png',
       deployedUrl: 'https://markaamaro.github.io/Weather-Dashboard/',
       repoUrl: 'https://github.com/MarkAAmaro/Weather-Dashboard'
     },
     {
       title: 'JavaScript Password Generator',
-      imageUrl: '/passwordgenerator.png',
+      imageUrl: process.env.PUBLIC_URL + '/passwordgenerator.png',
       deployedUrl: 'https://markaamaro.github.io/JavaScript-Password-Generator/',
       repoUrl: 'https://github.com/MarkAAmaro/JavaScript-Password-Generator'
     },
     {
       title: 'Daily Event Planner',
-      imageUrl: '/Past,Present,Future.png',
+      imageUrl: process.env.PUBLIC_URL + '/Past,Present,Future.png',
       deployedUrl: 'https://markaamaro.github.io/Daily-Event-Planner/',
       repoUrl: 'https://github.com/MarkAAmaro/Daily-Event-Planner'
     }
@@ -55,4 +53,3 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
-
