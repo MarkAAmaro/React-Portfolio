@@ -1,8 +1,8 @@
 import React from 'react';
-import Project from './Project';  // Assuming you have a Project.js file in the same folder
+import Project from './Project';  
 
 const Portfolio = () => {
-  // Dummy data for now
+  
   const projects = [
     {
       title: 'Tech Blog',
@@ -10,7 +10,7 @@ const Portfolio = () => {
       deployedUrl: 'ttps://limitless-sierra-77455-2b6ced556da9.herokuapp.com/',
       repoUrl: 'https://github.com/MarkAAmaro/Tech-Blog'
     },
-    // Add more projects here
+    
   ];
 
   return (
