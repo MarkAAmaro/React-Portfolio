@@ -5,6 +5,8 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [message, setMessage] = useState('');
   const [isValid, setIsValid] = useState(true);
+  const [nameError, setNameError] = useState(false);
+  const [messageError, setMessageError] = useState(false);
 
   const validateEmail = (e) => {
     const email = e.target.value;
@@ -12,6 +14,14 @@ const Contact = () => {
 
     const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     setIsValid(re.test(String(email).toLowerCase()));
+  };
+
+  const validateRequiredField = (value, setError) => {
+    if (!value) {
+      setError(true);
+    } else {
+      setError(false);
+    }
   };
 
   return (
@@ -25,7 +35,9 @@ const Contact = () => {
             name="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
+            onBlur={() => validateRequiredField(name, setNameError)}
           />
+          {nameError && <div style={{color: 'red'}}>This field is required.</div>}
         </label>
         <label>
           Email:
@@ -33,7 +45,8 @@ const Contact = () => {
             type="email" 
             name="email" 
             value={email}
-            onChange={validateEmail} 
+            onChange={validateEmail}
+            onBlur={() => validateRequiredField(email, setIsValid)}
             style={{borderColor: isValid ? 'green' : 'red'}}
           />
           {!isValid && <div style={{color: 'red'}}>Invalid email address</div>}
@@ -44,7 +57,9 @@ const Contact = () => {
             name="message" 
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            onBlur={() => validateRequiredField(message, setMessageError)}
           />
+          {messageError && <div style={{color: 'red'}}>This field is required.</div>}
         </label>
         <input type="submit" value="Submit" />
       </form>
@@ -53,3 +68,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
