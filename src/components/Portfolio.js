@@ -6,11 +6,11 @@ const Portfolio = () => {
   const projects = [
     {
       title: 'Tech Blog',
-      imageUrl: 'path/to/image1.jpg',
-      deployedUrl: 'ttps://limitless-sierra-77455-2b6ced556da9.herokuapp.com/',
+      imageUrl: '/BlogTracker.png',
+      deployedUrl: 'https://limitless-sierra-77455-2b6ced556da9.herokuapp.com/',
       repoUrl: 'https://github.com/MarkAAmaro/Tech-Blog'
     },
-    
+    // ... other projects
   ];
 
   return (
@@ -24,3 +24,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
