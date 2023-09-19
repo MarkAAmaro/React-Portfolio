@@ -45,9 +45,11 @@ const Portfolio = () => {
   return (
     <div id="portfolio">
       <h2>Portfolio</h2>
-      {projects.map((project, index) => (
-        <Project key={index} {...project} />
-      ))}
+      <div className="project-grid">
+        {projects.map((project, index) => (
+          <Project key={index} {...project} />
+        ))}
+      </div>
     </div>
   );
 };
