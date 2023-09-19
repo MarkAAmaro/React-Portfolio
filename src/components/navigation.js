@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-const Navigation = () => {
-  const [activeSection, setActiveSection] = useState('About Me');
+const Navigation = ({ setActiveSection, activeSection }) => {
 
   const handleClick = (section) => {
     setActiveSection(section);
