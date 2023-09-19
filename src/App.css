@@ -1,22 +1,22 @@
-/* General styles for the App component */
+
 .App {
     text-align: center;
   }
   
-  /* Header inside App component */
+  
   .App-header {
     background-color: #282c34;
     padding: 20px;
     color: white;
   }
   
-  /* Main content */
+ 
   .App-main {
     padding: 20px;
     background-color: #fff;
   }
   
-  /* Footer inside App component */
+
   .App-footer {
     background-color: #282c34;
     padding: 10px 0;
@@ -24,3 +24,18 @@
   }
 
   
+  .nav-button {
+   
+    transition: font-size 0.3s ease; 
+  }
+
+
+  .nav-button:hover {
+    font-size: 1.2em; 
+    cursor: pointer;  
+  }
+
+
+.nav-button.active {
+  background-color: #ddd; 
+}

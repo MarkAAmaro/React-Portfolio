@@ -1,14 +1,23 @@
-import React from 'react';
-import Navigation from './Navigation';
+import React, { useState } from 'react';
 
-const Header = ({ setActiveSection, activeSection }) => {
-  console.log("Header loaded");
+const Navigation = ({ setActiveSection, activeSection }) => {
+  const handleClick = (section) => {
+    setActiveSection(section);
+  };
+
   return (
-    <header>
-      <h1>Mark Amaro</h1>
-      <Navigation setActiveSection={setActiveSection} activeSection={activeSection} />
-    </header>
+    <nav>
+      {['About Me', 'Portfolio', 'Contact', 'Resume'].map((section) => (
+        <button 
+          key={section} 
+          className={`nav-button ${activeSection === section ? 'active' : ''}`}
+          onClick={() => handleClick(section)}
+        >
+          {section}
+        </button>
+      ))}
+    </nav>
   );
 };
 
-export default Header;
+export default Navigation;
