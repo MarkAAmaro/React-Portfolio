@@ -2,6 +2,7 @@
   "name": "your-app-name",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://MarkAAmaro.github.io/React-Portfolio/",
   "dependencies": {
     "axios": "^1.5.0",
     "font-awesome": "^4.7.0",
@@ -15,13 +16,16 @@
     "yup": "^1.2.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.x"
+    "@babel/plugin-proposal-private-property-in-object": "^7.x",
+    "gh-pages": "^6.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "browserslist": {
     "production": [
