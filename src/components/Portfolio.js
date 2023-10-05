@@ -37,6 +37,12 @@ const Portfolio = () => {
       imageUrl: process.env.PUBLIC_URL + '/Past,Present,Future.png',
       deployedUrl: 'https://markaamaro.github.io/Daily-Event-Planner/',
       repoUrl: 'https://github.com/MarkAAmaro/Daily-Event-Planner'
+    },
+    {
+      title: 'Rememories',
+      imageUrl: process.env.PUBLIC_URL + '/Rememories.png',
+      deployedUrl: 'https://markaamaro.github.io/Daily-Event-Planner/',
+      repoUrl: 'https://github.com/MarkAAmaro/Daily-Event-Planner'
     }
   ];
 
